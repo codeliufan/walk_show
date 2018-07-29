@@ -9,6 +9,9 @@ $(function () {
 		$(".search>label").hide();
 		console.log($(".search label"))
 	}).focusout(function () {
-		$(".search>label").show();
+		console.log($(".txt").val())
+		if($(".txt").val() === ""){
+			$(".search>label").show();
+		}
 	});
 });
