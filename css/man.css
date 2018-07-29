@@ -1,0 +1,95 @@
+
+.body{
+	color: black;
+}
+
+
+.man_warp{
+	width: 100%;
+	min-width: 1200px;
+	margin: 0 auto;
+	background: url(../images/bg.jpg) no-repeat center top fixed;
+}
+.man_box{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 500px 0 50px;
+	position: relative;
+}
+.floor{
+	width: 1000px;
+	background: rgba(255,255,255,.6);
+	margin: 0 0 0 45px;
+}
+.floor .item_3,.floor .item_2{
+	padding: 15px 0 0 15px;
+	overflow: hidden;
+	margin-top: -15px;
+}
+.floor .item_3 li{
+	float: left;
+	width: 314px;
+	margin: 0 14px 15px 0;
+}
+.floor .item_3 li a{
+	display: block;
+	width: 314px;
+}
+.floor .item_2 li{
+	float: left;
+	width: 478px;
+	margin: 0 14px 15px 0;
+}
+
+
+.man_menu{
+	width: 133px;
+	position: fixed;
+	left: 50%;
+	margin: 0 0 0 475px;
+	top: 365px;
+	z-index: 1;
+}
+#manMenu{
+	width: 133px;
+	position: relative;
+}
+#manMenu li{
+	float: left;
+	width: 133px;
+	height: 40px;
+	margin: 0 0 15px;
+}
+#manMenu li a{
+	display: block;
+	width: 133px;
+	height: 40px;
+	background: url(../images/man_right.png) no-repeat;
+}
+#manMenu li .nav_2F{
+	background-position: 0 -100px;
+}
+#manMenu li .nav_3F{
+	background-position: 0 -50px;
+}
+#manMenu li .nav_4F{
+	background-position: 0 -150px;
+}
+#manMenu li .nav_5F{
+	background-position: 0 -200px;
+}
+#manMenu li .nav_1F:hover,#manMenu .current .nav_1F{
+	background-position: -150px 0;
+}
+#manMenu li .nav_2F:hover,#manMenu .current .nav_2F{
+	background-position: -150px -100px;
+}
+#manMenu li .nav_3F:hover,#manMenu .current .nav_3F{
+	background-position: -150px -50px;
+}
+#manMenu li .nav_4F:hover,#manMenu .current .nav_4F{
+	background-position: -150px -150px;
+}
+#manMenu li .nav_5F:hover,#manMenu .current .nav_5F{
+	background-position: -150px -200px;
+}

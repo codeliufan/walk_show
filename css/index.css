@@ -1,0 +1,81 @@
+
+/************************************************************************************************************************ 这里是主页  ************************************************************************************************************************************/
+
+.shortcut,.content{margin: 0 auto;}
+
+/* 广告 开始 */
+.banner{margin-top: 21px;}
+/* 广告 结束 */
+
+
+
+/* 快速链接 开始 */
+.shortcut{
+	width: 1180px;height: 76px;
+	padding: 0 0 30px 20px;
+	margin-top: 20px;
+}
+.shortcut a{
+	display:inline-block;
+	width: 250px;height: 86px;
+	margin-right: 60px;
+	background: url(../images/shortcut.jpg) no-repeat;
+	float: left;
+}
+.shortcut .share_return{}
+.shortcut .new_own{background-position: -240px 0;}
+.shortcut .new_gift{background-position: -720px 0;}
+.shortcut .invite_friend{margin: 0px;background-position: -960px 0;}
+/* 快速链接 结束 */
+
+.content{width: 1200px;padding-bottom: 30px;}
+/* 尖货推荐 开始 */
+.common{}
+.common h3{text-align: center;padding-bottom: 20px;}
+.common ul{overflow:hidden; padding-bottom: 40px;}
+.common li{float: left;}
+/* 尖货推荐 结束 */
+
+
+/* 热荐专题 开始 */
+.hot_topic{}
+/* 热荐专题 结束 */
+
+
+/* 精选卖场 开始 */
+.sift_store{}
+/* 精选卖场 结束 */
+
+
+/* 豪车 开始 */
+.auto{padding: 20px 0 50px 0;}
+/* 豪车 结束 */
+
+
+/* 发现好货 开始 */
+.find_good{}
+.find_good ul{padding-bottom: 20px;}
+.find_good ul li{padding: 0 17px 20px 0;}
+.find_good ul .right{padding-right: 0px;}
+.find_good ul li a{display:block; position: relative;}
+.find_good ul span{
+	width: 285px;height: 488px;/*287 490*/
+	position: absolute;
+	left: 0px;top: 0px;
+	border: 1px solid #efefef;
+}
+.find_good ul li a:hover span{width:283px;height:486px;border: 2px solid #ccc;}
+/* 发现好货 结束 */
+
+/* c3 */
+/*.hot_topic,.sift_store li{
+	overflow: hidden;
+}
+.hot_topic,.sift_store a:hover img{
+	-webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.5,1.5);
+    -transform:scale(1.5,1.5);
+}*/
+.recomend_best a:hover img,.sift_store a:hover img,.hot_topic a:hover img{
+	opacity: .666;
+}

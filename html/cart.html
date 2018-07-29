@@ -1,0 +1,162 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset = 'utf-8' />
+	<title>购物车</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/cart.css" />
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/cart.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="cart_top">
+		<div class="cart_log">
+			<a href="../index.html"></a>
+		</div>
+		<div class="cart_txt">
+			<p class="p1">客服热线(免长途费): <b>400-888-4499</b>&ensp;&ensp;<a href="javascript:;">在线客服</a></p>
+			<p>欢迎光临走秀网！xiu_1013504262919&ensp;&ensp;<a class="exit" href="javascript:;">[ 退出 ] </a><a href="javascript:;">[ 我的走秀 ] </a>| <a href="javascript:;">帮助中心</a></p>
+		</div>
+	</div>
+
+	<!--  -->
+	<div class="my_cart">
+		<div class="shop_list">
+			<ul>
+				<li class="sli_bg"><span class="sli_on"></span>1.我的购物袋</li>
+				<li><span class="sli_of"></span>2.填写并核对订单信息</li>
+				<li>3.成功提交订单</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- table -->
+	<div class="shopping_cart">
+		<div class="cart_table">
+			<table>
+				<tbody>
+					<tr class="first_tr">
+						<th width="80"><label><input class="check_all" style="vertical-align:middle;margin-right:2px;" type="checkbox" checked="true" class="checkall" />全选</label></th>
+						<th width="358">商品</th>
+						<th width="120">购买价(元)</th>
+						<th width="130">小计(元)</th>
+						<th width="130">数量</th>
+						<th width="130">操作</th>
+					</tr>
+
+					<tr class="goods_info"  style="display:none;">
+						<td class="td_checkbox"><input class="isCheck" type="checkbox" checked="true" /></td>
+						<td class="td_goods">
+							<a style="float:left" href="javascript:;"><img src="../images/cart_goods2.jpg"></a>
+							<div style="float:left;text-align:left;padding:10px;">
+								<span class="goods_brand">Jaeqer LeCoultre</span><br>
+								<span class="goods_name">男士超卓传统大师系列自动机械表</span><br>
+								<span class="color_size">颜色: <font class="goods_color"></font>&ensp;&ensp;&ensp;&ensp;尺码: <font class="goods_size"></font></span>
+							</div>
+						</td>
+						<td class="td_price"><p>￥ <span class="price">0</span></p></td>
+						<td class="td_allyuan"><font>￥ <span class="small_total">0</span></font></td>
+						<td class="td_num">
+							<a class="down" href="javascript:;">-</a>
+							<input class="goods_num" type="text" value="1" style="text-align:center;" />
+							<a class="up" href="javascript:;">+</a>
+						</td>
+						<td class="td_del"><a href="javascript:;">移至收藏夹</a><br><br><a class="del_row" href="javascript:;">删除</a></td>	
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="cart_bill">
+			<div class="choice_all">
+				<label><input class="check_all" type="checkbox" checked="cheched" /> 全选</label>
+			</div>
+			<div class="cart_del">
+				<a id="del" href="javascript:;">删除</a>
+				<a id="clear" href="javascript:;">清楚失效商品</a>
+				<a id="moveto" href="javascript:;">移至收藏夹</a>
+			</div>
+			<div class="go_buy">
+				<div class="div_1">已选商品<span> 1 </span>件</div>
+				<div class="div_2">总计(不含运费)：&nbsp;<span>¥&nbsp;<span id="money">&nbsp;0.00 </span></span></div>
+				<div class="div_3"><a id="buy" href="order.html"></a></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- may_care -->
+	<div class="may_care">
+		<h3>您可能感兴趣的商品</h3>
+		<ul>
+			<li>
+				<a class="careimg" href="javascript:;"><img src="../images/care1.jpg" /></a>
+				<p>John Devin</p>
+				<p><a href="javascript:;">男士秋冬针织衫 680693</a></p>
+				<div>走秀价:<b> ¥99 </b></div>
+			</li>
+			<li>
+				<a class="careimg" href="javascript:;"><img src="../images/care4.jpg" /></a>
+				<p>Lee</p>
+				<p><a href="javascript:;">Lee 男士格子长袖衬衫</a></p>
+				<div>走秀价:<b> ¥99 </b></div>
+			<li>
+				<a class="careimg" href="javascript:;"><img src="../images/care1.jpg" /></a>
+				<p>Lee</p>
+				<p><a href="javascript:;">Lee 男士 时尚百搭牛仔衬衫</a></p>
+				<div>走秀价:<b> ¥99 </b></div>
+			</li>
+			<li>
+				<a class="careimg" href="javascript:;"><img src="../images/care3.jpg" /></a>
+				<p>Lee</p>
+				<p><a href="javascript:;">Lee 男装 休闲商务长袖衬衫</a></p>
+				<div>走秀价:<b> ¥99 </b></div>
+			</li>
+			</li>
+			<li>
+				<a class="careimg" href="javascript:;"><img src="../images/care5.jpg" /></a>
+				<p>Lee</p>
+				<p><a href="javascript:;">Lee 男士 撞色拼接格子衫 长...</a></p>
+				<div>走秀价:<b> ¥99 </b></div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 收藏 -->
+	<div class="cart_collect">
+		<a class="hide" href="javascript:;"></a>
+	</div>
+
+	<div class="collect_list">
+		<table width="100%">
+			<tr>
+				<th nowrap="nowrap" width="39%">商品</th>
+				<th nowrap="nowrap" width="11%">走秀假</th>
+				<th nowrap="nowrap" width="13%">购买价</th>
+				<th nowrap="nowrap" width="12%">库存状态</th>
+				<th nowrap="nowrap" width="15%">操作</th>
+			</tr>
+			<tr>
+				<td class="td_goods"></td>
+				<td class="td_show"></td>
+				<td class="td_buy"></td>
+				<td class="td_isleft"></td>
+				<td class="put_inbag"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<p class="see_goods"><a href="javascript:;">查看收藏夹中所有商品</a></p>
+	</div>
+
+	<!--  -->
+	<div class="cart_footer">
+		<p>Copyright &copy; 2008-2016 <a href="javascript:;">Xiu.com</a>深圳走秀网络科技有限公司 版权所有 . <a href="javascript:;">粤ICP备07502993号</a></p>
+	</div>
+</body>
+</html>

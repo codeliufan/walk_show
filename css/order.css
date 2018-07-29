@@ -1,0 +1,208 @@
+body{
+	color: #5b5b5b;
+}
+
+.shop_list .sli_1 span{
+	background-position: -88px -1px;
+}
+
+.order_confirm{
+	margin: 0 auto;
+	width: 948px;
+	border: 2px solid #dcdcdc;
+}
+.order_confirm h2{
+	font-size: 14px;
+	line-height: 28px;
+	color: black;
+	background: #e3e3e3;
+	color: #5b5b5b;
+	padding: 0 0 0 5px;
+}
+.order_confirm h3{
+	width: 908px;
+	height: 22px;
+	font-size: 12px;
+	line-height: 22px;
+	padding: 12px 0 0 20px;
+	margin: 0 auto;
+}
+.order_confirm .add_address{
+	width: 908px;
+	border-bottom: 1px dashed #dcdcdc;
+	background: #f6f6f6;
+	margin: 5px auto 4px;
+	padding: 5px 0;
+}
+.add_table{
+
+}
+.add_table table{
+	width: 100%;
+	border-collapse: collapse;
+	border: 0;
+	text-align: left;
+}
+.add_table table tr{
+	height: 31px;
+}
+.add_table table th{
+	width: 108px;
+	text-align: right;
+	font-weight: normal;
+	padding: 5px;
+}
+.add_table table input{
+	height: 22px;
+	border: 1px solid #b3b3b3;
+	padding-left: 5px;
+}
+#add_name,#add_code,#add_phone,#add_idcard{
+	width: 200px;
+}
+.red{
+	color: red;
+}
+.add_table table td select{
+	width: 100%;
+	height: 24px;
+}
+.choice_add div{
+	padding-right: 4px;
+	width: 144px;
+	float: left;
+}
+#add_detail{
+	width: 446px;
+}
+.confirm,.deli_btn{
+	display: block;
+	width: 113px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	color: white;
+	background: url(../images/a.gif) no-repeat 0 -293px;
+	margin-left: 30px;
+}
+.confirm:hover,.deli_btn:hover{
+	background-position: 0 -319px;
+}
+
+.deli_confirm{
+	width: 898px;
+	background: #f6f6f6;
+	border-bottom: 1px dashed #dcdcdc;
+	margin: 0 auto 4px;
+	padding: 12px 0 20px 10px;
+}
+.td_left,.td_right{
+	height: 66px;
+	vertical-align: top;
+	line-height: 24px;
+}
+.deli_btn{
+	margin-left: 20px;
+}
+
+.pay_method{
+	width: 898px;
+	margin: 0 auto;
+	padding: 0 0 10px 10px;
+	border-bottom: 1px dashed #dcdcdc;
+	background: #f6f6f6;
+}
+.you_can,.pay_youcan{
+	margin: 0 20px 0 8px;: 
+}
+.you_can span{
+	margin-left: -8px;
+}
+.you_can label{
+	display: inline-block;
+	font-weight: bold;
+	padding: 8px 0 10px;
+}
+.you_can label input,.pay_youcan input{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.you_can{
+	border-bottom: 1px dashed #7f7d7d;
+}
+.pay_youcan{
+	padding-top: 15px;
+}
+.pay_youcan label{
+	font-weight: bold;
+}
+.pay_youcan div{
+	margin-bottom: 10px;
+}
+.goods_lis{
+	margin-top: 12px;
+}
+.goods_lis table{
+	width: 852px;
+	border-collapse: collapse;
+	margin:0 auto;
+	border: 1px solid #d6d3d3;
+}
+.goods_lis table tr{
+	border-bottom: 1px solid #d6d3d3;
+}
+.goods_lis table th{
+	background: #efefef;
+	font-weight: normal;
+	height: 23px;
+}
+.goods_lis table td{
+	text-align: center;
+	line-height: 25px;
+}
+.goods_lis table dl{
+	overflow: hidden;
+	padding: 20px 0;
+}
+.goods_lis table dt{
+	width: 47px;
+	height: 80px;
+	float:left;
+	padding: 20px 10px 0;
+}
+.goods_lis table dt img{
+	width: 43px; height: 55px;
+	border: 1px solid #d5d2d2;
+	padding: 1px;
+}
+.goods_lis table dd{
+	float: left;
+	text-align: left;
+	padding: 0 0 0 10px
+}
+
+
+.go_pay{
+	overflow: hidden;
+	width: 868px;
+	margin: 40px auto 0;
+	border-top: 1px dashed #dcdcdc;
+	padding: 20px;
+}
+.pay_right{
+	line-height: 30px;
+	float: left;
+	margin-left: 20px;
+}
+.pay_right p{
+
+}
+.go_pay_btn{
+	float: right;
+}
+.go_pay_btn a{
+	margin: 40px 50px 0 0;
+	display: block;
+	width: 127px; height: 30px;
+	background: url(../images/user_sprite.png) no-repeat 0 -160px;
+}

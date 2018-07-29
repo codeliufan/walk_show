@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = 'utf-8' />
+	<title>订单</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/cart.css" />
+	<link rel="stylesheet" type="text/css" href="../css/order.css" />
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/order.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="cart_top">
+		<div class="cart_log">
+			<a href="../index.html"></a>
+		</div>
+		<div class="cart_txt">
+			<p class="p1">客服热线(免长途费): <b>400-888-4499</b>&ensp;&ensp;<a href="javascript:;">在线客服</a></p>
+			<p>欢迎光临走秀网！xiu_1013504262919&ensp;&ensp;<a class="exit" href="javascript:;">[ 退出 ] </a><a href="javascript:;">[ 我的走秀 ] </a>| <a href="javascript:;">帮助中心</a></p>
+		</div>
+	</div>
+
+
+	<!--  -->
+	<div class="my_cart">
+		<div class="shop_list">
+			<ul>
+				<li class="sli_1"><span></span>1.我的购物袋</li>
+				<li class="sli_bg"><span></span>2.填写并核对订单信息</li>
+				<li>3.成功提交订单</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--  -->
+	<div class="order_confirm">
+		<h2>填写并核对订单信息</h2>
+		<h3>收货人信息</h3>
+		<div class="add_address">
+			<form>
+				<div class="add_table">
+					<table>
+						<tr>
+							<th>
+								<span class="red">*</span>收货人姓名：
+							</th>
+							<td>
+								<input id="add_name" type="text" />
+								<span class="red name_error" style="display:none" >收货人姓名不能包含特殊字符！</span>
+							</td>
+						</tr>
+						<tr>
+							<th style="text-align:right">
+								<span class="red">*</span>省份／直辖市：
+							</th>
+							<td class="choice_add">
+								<div>
+									<select class="sheng">
+										<option>请选择</option>
+									</select>
+								</div>
+								<div>
+									<select class="shi">
+										<option>请选择</option>
+									</select>
+								</div>
+								<div>
+									<select class="xian">
+										<option>请选择</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="red">*</span>详细地址：</th>
+							<td>
+								<input id="add_detail" type="text" />
+								<span class="red" style="display:none" >详细地址不能为空！</span>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="red">*</span>邮政编码：</th>
+							<td>
+								<input id="add_code" type="text" />
+								<a href="javascript:;" style="color:#181a95;padding-right:4px;text-decoration:underline;">查询邮编</a>
+								<span class="red" style="display:none" >详细地址不能为空！</span>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="red">*</span>手机号码：</th>
+							<td>
+								<input id="add_phone" type="text" />
+								<span class="red" style="display:none" >详细地址不能为空！</span>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<span style="padding-left:30px;">您的订单包含海外商品，根据国家相关政策规定，凡购买海外商品需提供身份证信息</span>
+							</td>
+						</tr>
+						<tr>
+							<th>收货人身份证号码：</th>
+							<td>
+								<input id="add_idcard" type="text" />
+								<span>成功登记后将获得30元优惠券</span>
+							</td>
+						</tr>
+						<tr>
+							<th></th>
+							<td>
+								<label><input style="height:13px;" type="checkbox" />设为默认</label>
+							</td>
+						</tr>
+						<tr>
+							<th>注：</th>
+							<td>
+								如果收货人并非您本人，您可<a style="color:#181a95;text-decoration:underline;" href="javascript:;">点此添加订货人联系信息</a>。
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<a class="confirm" href="javascript:;">确认收货人信息</a>
+							</td>
+						</tr>						
+					</table>
+				</div>
+			</form>
+		</div>
+		<h3>配送信息</h3>
+		<div class="deli_confirm">
+			<table width="100%">
+				<tr>
+					<td class="td_left" width="40%">
+						<p>配送方式</p>
+						<div><input type="radio" name="deli_method" checked="checked" />快递，全场199元免运费!</div>
+					</td>
+					<td class="td_right" width="60%">
+						<p>配送时间</p>
+						<label><input type="radio" checked="checked" name="deli_time" />工作日、双休日与假日均可送货&ensp;&ensp;&ensp;&ensp;</label>
+						<label><input type="radio" name="deli_time" />只工作日送货(双休日、假日不用送)</label><br>
+						<label><input type="radio" name="deli_time" />只双休日、假日送货(工作日不用送)&ensp;</label>
+						<label><input type="radio" name="deli_time" />白天没人，尽量安排晚上送货</label>
+					</td>
+				</tr>
+			</table>
+			<div><a class="deli_btn" href="javascript:;">确认配送信息</a></div>
+		</div>
+		<h3>支付方式</h3>
+		<div class="pay_method">
+			<div class="you_can">
+				<span style="display:inline-block;line-height:18px;color:red;">您也可以同时：</span><br>
+				<label><input type="checkbox" />用礼品卡冲抵金额</label>
+			</div>
+			<div class="pay_youcan">
+				<div>
+					<label><input type="radio" name="pay_method" checked="checked" />在线支付</label>
+					<span>即时到账，支持绝大部分银行借记卡、信用卡和支付平台</span>
+				</div>
+				<div>
+					<label><input type="radio" name="pay_method" />银行汇款</label>
+					<span>您需提交订单后再到银行吧货款汇入走秀账户，<font color="red">汇款成功后请联系客服告知汇款信息以便即时为您备货</font>，到账后将为您发货，到账时间1-5个工作日！</span>
+				</div>
+				<div>
+					<label><input type="radio" name="pay_method" />在线支付</label>
+					<span>先送货再收款，请您在快递人员送货时付款</span>
+				</div>			
+			</div>
+			<div>
+				<div><a class="deli_btn" href="javascript:;">确认支付方式</a></div>
+			</div>
+		</div>
+		<h3>商品清单<a href="javascript:;" style="margin-left:10px;font-weight:normal;color:#F26521;">[修改]</a></h3>
+		<div class="goods_lis">
+			<table>
+				<tr>
+					<th style="width: 434px;">商品</th>
+					<th style="width: 140px;">走秀价</th>
+					<th style="width: 120px;">购买价</th>
+					<th style="width: 70px;">数量</th>
+					<th style="width: 88px;">小计</th>
+				</tr>
+				<tr class="goods_li">
+					<td>
+						<dl>
+							<dt><img src="../images/default.jpg" /></dt>
+							<dd>
+								<p>Philipp Plein</p>
+								<p>男士骷髅寸免短袖T恤</p>
+								<p>颜色 : 黑色 尺度 : S</p>
+								<p>本商品无质量问题不支持退换货和拒收</p>
+							</dd>
+						</dl>
+					</td>
+					<td>￥5690</td>
+					<td style="font-weight:bold;">￥5690</td>
+					<td>1</td>
+					<td style="color:#f26521;font-weight:bold;font-size:15px;">￥5690</td>
+				</tr>
+			</table>
+			<div class="go_pay">
+				<div class="pay_right">
+					<p>商品总价：￥<span>469390</span></p>
+					<p>运费：￥<span>0</span></p>
+					<p>订单应付金额：<font color="#FF6633">￥<span>469390</span></font></p>	
+				</div>
+				<div class="go_pay_btn">
+					<a href="javascript:;"></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!--  -->
+	<div class="cart_footer">
+		<p>Copyright &copy; 2008-2016 <a href="javascript:;">Xiu.com</a>深圳走秀网络科技有限公司 版权所有 . <a href="javascript:;">粤ICP备07502993号</a></p>
+	</div>
+</body>
+</html>
